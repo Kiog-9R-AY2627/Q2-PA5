@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Forms</title>
+
+        <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- latest compiled and minified CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="container">
+    
+    <form action="" method="post">
+
+        <h2 class="text-center text-primary">Custom Sneaker Order Form</h2>
+
+        <label for="form-name" class="form-label">Name:</label> 
+        <input type="text" name="username" id="form-name" class="form-control">
+    
+        <label for="form-email" class="form-label">Email:</label> 
+        <input type="email" name="emailaddress" id="form-email" class="form-control">
+
+        <label for="form-tel" class="form-label">Telephone:</label> 
+        <input type="tel" name="telephone" id="form-tel" class="form-control">
+
+        <label for="form-story" class="form-label">Tell us about yourself:</label> 
+        <textarea name="story" maxlength="600" id="form-story" class="form-control" placeholder="No more than 600 characters long"></textarea>
+        
+        <label for="sizes" class="form-label">Size:</label>
+
+        <select class="form-select">
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        </select>
+        
+        <em>Sizes reflect standard US men's sizes</em>
+            
+        <label for="colors" style="padding: 20px;">Sneaker Color:</label>
+        <fieldset id="colors">
+
+            <legend>Color</legend>
+            <input type="radio" name="crust" id="classic">
+            <label for="classic"> Red </label>
+            <br>
+            <input type="radio" name="crust" id="Multigrain">
+            <label for="Multigrain"> Blue </label>
+            <br>
+            <input type="radio" name="crust" id="cheese stuffed crust">
+            <label for="cheese stuffed crust"> Black </label>
+            <br>
+            <input type="radio" name="crust" id="gluten free">
+            <label for="gluten free"> Silver </label>
+        </fieldset>
+            
+        <label for="features" style="padding: 20px;">Add-on Features:</label>
+        <fieldset id="features">
+            <legend>Feature</legend>
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+  <label class="form-check-label"> Sparkly Laces</label>
+</div>
+ <div class="form-check">
+  <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+  <label class="form-check-label"> Metallic logo</label>
+</div>
+ <div class="form-check">
+  <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+  <label class="form-check-label"> Light-up heels</label>
+</div>
+ <div class="form-check">
+  <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+  <label class="form-check-label"> MP3-enabled</label>
+</div>
+
+<br>
+            
+<button type="button" class="btn btn-primary">ENTER</button>
+  
+    </form>
+   </div>
+    
+    
+</body>
+</html>
